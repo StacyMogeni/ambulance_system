@@ -11,7 +11,7 @@ class AmbulanceCard extends StatelessWidget {
     this.ambulanceId = 'AMB001',
     this.type = 'Life Support',
     this.status = 'Active',
-    this.onTap,
+    this.onTap, required String id, required registrationNumber, required driverName,
   }) : super(key: key);
 
   Color _getStatusColor() {

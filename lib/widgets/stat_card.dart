@@ -9,7 +9,7 @@ class StatCard extends StatelessWidget {
     Key? key,
     required this.title,
     required this.value,
-    required this.color,
+    required this.color, required IconData icon, required Null Function() onTap,
   }) : super(key: key);
 
   @override

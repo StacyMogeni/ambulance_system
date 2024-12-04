@@ -27,12 +27,13 @@ class RequestCard extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            // Header for the emergency request
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text(
+                const Text(
                   'Emergency Request',
-                  style: const TextStyle(
+                  style: TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
                   ),
@@ -50,11 +51,12 @@ class RequestCard extends StatelessWidget {
             const SizedBox(height: 4),
             Text('Type: $emergencyType'),
             const SizedBox(height: 16),
+            // Accept and Decline buttons
             Row(
               children: [
                 Expanded(
                   child: ElevatedButton(
-                    onPressed: onAccept,
+                    onPressed: onAccept, // Calls the provided onAccept function
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.green,
                     ),
@@ -64,7 +66,7 @@ class RequestCard extends StatelessWidget {
                 const SizedBox(width: 16),
                 Expanded(
                   child: ElevatedButton(
-                    onPressed: onDecline,
+                    onPressed: onDecline, // Calls the provided onDecline function
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.red,
                     ),

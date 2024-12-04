@@ -154,7 +154,7 @@ void main() {
               (WidgetTester tester) async {
             await tester.pumpWidget(
                 MaterialApp(
-                    home: BookingDetailsScreen(emergencyType: 'Life Support')
+                    home: BookingDetailsScreen(emergencyType: 'Life Support', description: '',)
                 )
             );
 
@@ -167,7 +167,7 @@ void main() {
               (WidgetTester tester) async {
             await tester.pumpWidget(
                 MaterialApp(
-                    home: BookingDetailsScreen(emergencyType: 'Life Support')
+                    home: BookingDetailsScreen(emergencyType: 'Life Support', description: '',)
                 )
             );
 
@@ -181,7 +181,7 @@ void main() {
               (WidgetTester tester) async {
             await tester.pumpWidget(
                 MaterialApp(
-                    home: BookingDetailsScreen(emergencyType: 'Life Support')
+                    home: BookingDetailsScreen(emergencyType: 'Life Support', description: '',)
                 )
             );
 
